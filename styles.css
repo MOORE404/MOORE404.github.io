@@ -1,0 +1,197 @@
+body {
+    background-image: url('website.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/*This section sets styles for the body element of the website, including the background image, font, and display properties.*/
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+/*This section resets some default styles that might affect the layout of the website, including box sizing, margins, and padding.*/
+
+
+main {
+  padding: 20px;
+  background-color: #413e3e;
+  border-radius: 30px;
+  box-shadow: 0 0 25px rgb(255, 255, 255);
+  animation: zoom-in-out 3s ease infinite;
+  transition: box-shadow 0.3s ease-in-out;
+}
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 25 rgba(255, 255, 255, 0);
+  }
+  50% {
+    transform: scale(1.01);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 25 rgba(255, 255, 255, 0);
+  }
+}
+
+/*This section sets styles for the main content of the website, including padding, background color, border radius, and box shadow.*/
+/*There is also an animation which makes the website look alot more alive*/
+  
+h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    text-align: center;
+  }
+  /*This section sets styles for header level 1 (h1) elements, including margins, background color,
+  text color, border, padding, border radius, and box shadow.*/
+  h2 {
+    font-size: 15px;
+    color: #ffffff60;
+  }
+  /*This section sets styles for header level 2 (h2) elements, including font size and color.*/
+
+  h3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    font-size: 15px;
+  }
+  /*This section sets styles for header level 3 (h3) elements, including margins, 
+  background color, text color, border, padding, border radius, box shadow, and font size.*/
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+  }
+  /*Sets styles for an HTML table, including collapsing borders, 
+  background color, text color, no border, padding, border radius, and box shadow.*/
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }    
+  /*Sets styles for table headers and data cells, including padding and left-aligned text.*/
+
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    pointer-events: auto;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    }
+    /*Sets styles for HTML buttons, including background color, text color, 
+    no border, padding, border radius, cursor type, pointer events, box shadow, and margins.*/
+
+  input {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+    }
+    /* Sets styles for HTML input fields, including background color,
+     text color, no border, padding, border radius, cursor type, box shadow, and margins.*/
+    select {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 5px rgb(255, 255, 255);
+      margin-bottom: 10px;
+      margin-right: 5px;
+      margin-top: 10px;
+    }
+    /*Sets styles for HTML select fields, including background color, text color,
+     no border, padding, border radius, cursor type, box shadow, and margins.*/
+
+  input:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  /*Sets styles for when the mouse hovers over an input or button element, including changing the background and text color.*/
+
+  .search-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  /*Sets styles for a specific class of button element with a class name of "search-button", including background color, text color,
+   no border, padding, border radius, cursor type, box shadow, and margins.*/
+
+   @keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 5px rgb(255, 255, 255);
+    }
+    50% {
+      box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    100% {
+      box-shadow: 0 0 5px rgb(255, 255, 255);
+    }
+  }
+
+
+
+
+/* Audio Player Container */
+#audioPlayer {
+  background-color: #333; /* Background color */
+  padding: 10px;
+}
+
+
+  
+  
+  
